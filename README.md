@@ -52,18 +52,19 @@ TP1_G3_brain-tumor-mgmt/
         └── amostra_g3.csv
 ```
 
-## Como executar
+## Como rodar
 
-1. Criar um Notebook novo na página do desafio no Kaggle.
-2. Adicionar o dataset da competição em "Add Input".
-3. Importar `notebooks/01_eda.ipynb` (File > Import Notebook) ou copiar as
-   células.
-4. Rodar todas as células ("Save & Run All" / Commit), para gerar e salvar a
-   pasta `outputs_eda_g3/` com as tabelas e figuras.
-
-Nenhuma dependência além das listadas em `requirements.txt` é necessária. O
-notebook não usa caminhos absolutos de máquina local — apenas
-`/kaggle/input/...` e uma pasta de saída relativa.
+1. Acesse o Kaggle e crie um **Notebook** vinculado à competição
+   `rsna-miccai-brain-tumor-radiogenomic-classification` (o dataset já vem montado automaticamente em
+   `/kaggle/input/competitions/rsna-miccai-brain-tumor-radiogenomic-classification`).
+2. Faça upload do notebook `notebooks/01_eda.ipynb` para esse ambiente
+   (ou copie o conteúdo das células).
+3. Confirme que a variável `DATA_DIR`, na célula de configuração, aponta para:
+   ```python
+   DATA_DIR = "/kaggle/input/competitions/rsna-miccai-brain-tumor-radiogenomic-classification"
+   ```
+4. Rode as células em sequência ("Save & Run All"). As saídas (gráficos e CSVs) são geradas
+   automaticamente na pasta `outputs_eda_g3/` e podem ser baixadas em seguida.
 
 ## Status
 
